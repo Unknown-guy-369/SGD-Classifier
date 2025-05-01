@@ -8,11 +8,22 @@ To write a program to predict the type of species of the Iris flower using the S
 
 ## Algorithm
 
-1. Import Necessary Libraries and Load Data
-2. Split Dataset into Training and Testing Sets
-3. Train the Model Using Stochastic Gradient Descent (SGD)
-4. Make Predictions and Evaluate Accuracy
-5. Generate Confusion Matrix
+1. **Import Libraries and Load Dataset**  
+   - Load the Iris dataset using `load_iris()` from `sklearn.datasets`.  
+   - Convert it into a pandas DataFrame for easy handling.
+
+2. **Preprocess the Data**  
+   - Separate features (`x`) and target (`y`).  
+   - Split the data into training and testing sets using `train_test_split()`.
+
+3. **Train the Model**  
+   - Initialize an `SGDClassifier` with a maximum of 1000 iterations.  
+   - Train the model using `fit()` on the training data.
+
+4. **Evaluate the Model**  
+   - Predict the results using the test data.  
+   - Calculate the accuracy using `accuracy_score()`.  
+   - Display the confusion matrix and classification report.
 
 ## Program:
 ```
